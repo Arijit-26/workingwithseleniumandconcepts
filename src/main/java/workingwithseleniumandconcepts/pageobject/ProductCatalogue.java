@@ -36,7 +36,7 @@ public class ProductCatalogue extends ReusableComponents {
 	{
 		
 		waitForURLToMatch(URL);		//Using the method 'waitForURLToMatch()' from 'ReusableComponents' class
-		scrollbypixels();
+		
 		productPage.click();
 		ProductCatalogueMen productCatalogueMen = new ProductCatalogueMen(driver);
 		return productCatalogueMen;

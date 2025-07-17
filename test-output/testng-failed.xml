@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="workingwithseleniumandconcepts.testclasses.DataProviderUsingJson">
+      <class name="workingwithseleniumandconcepts.testclasses.TestClassMain">
         <methods>
           <include name="tearDown"/>
           <include name="launchBrowser"/>
-          <include name="shopping" invocation-numbers="0"/>
+          <include name="shopping" invocation-numbers="1 2"/>
+          <include name="checkMyOrders" invocation-numbers="2"/>
         </methods>
-      </class> <!-- workingwithseleniumandconcepts.testclasses.DataProviderUsingJson -->
+      </class> <!-- workingwithseleniumandconcepts.testclasses.TestClassMain -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
