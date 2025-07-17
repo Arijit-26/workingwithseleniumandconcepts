@@ -54,16 +54,10 @@ public class BaseTest {
 		System.out.println(browserName);
 		if(browserName.contains("chrome"))
 		{
-			/*ChromeOptions cpo = new ChromeOptions();
-			cpo.addExtensions(new File(System.getProperty("user.dir")+"\\AdBlock — block ads across the web - Chrome Web Store 6.24.0.0.crx"));
-			//cpo.addArguments("load-extension="+System.getProperty("user.dir")+"\\AdBlock — block ads across the web - Chrome Web Store 6.24.0.0.crx");*/
+			
 			this.driver = new ChromeDriver();
-			/*driver.get("https://chromewebstore.google.com/detail/adblock-%E2%80%94-block-ads-acros/gighmmpiobklfepjocnamgkkbiglidom?hl=en-GB&utm_source=ext_sidebar");
-			driver.findElement(By.xpath("//span[text()='Add to Chrome']")).click();
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-			driver.switchTo().alert().accept();
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));*/
-	 		}
+		
+	 	}
 		else if(browserName.contains("firefox"))
 		{
 			this.driver = new FirefoxDriver();
