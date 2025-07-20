@@ -47,6 +47,7 @@ WebDriver driver;
 	
 	public void selectFeaturesAndAddToCart() throws InterruptedException
 	{
+		scrollbypixels();
 		waitForURLToMatch(URL);
 		for(WebElement size:sizes)
 		{
